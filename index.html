@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Special Proposal ❤️</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      color: #fff;
+      margin-top: 100px;
+    }
+    h1 {
+      font-size: 40px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    #yes {
+      background: green;
+      color: white;
+    }
+    #no {
+      background: red;
+      color: white;
+      position: absolute;
+    }
+    footer {
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body><h1>Will You Be Mine? ❤️</h1><button id="yes" onclick="yesClicked()">Yes 😍</button>
+<button id="no" onmouseover="moveButton()">No 😜</button>
+
+<footer>Created by @kc__editz__07</footer><script>
+function yesClicked() {
+  document.body.innerHTML = "<h1>Yayyy!!! 💖 I Love You 😘</h1>";
+}
+
+function moveButton() {
+  let btn = document.getElementById("no");
+  btn.style.top = Math.random() * window.innerHeight + "px";
+  btn.style.left = Math.random() * window.innerWidth + "px";
+}
+</script></body>
+</html>
